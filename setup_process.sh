@@ -36,7 +36,7 @@ name,age,grade,subject
 EOF
 
 # --- Set up Python template files ---
-cat > src/main.py << 'EOF'
+cat > src/data_analysis.py << 'EOF'
 \"\"\"
 Main script for the project.
 TODO: Implement main logic.
@@ -50,7 +50,7 @@ if __name__ == "__main__":
     main()
 EOF
 
-cat > src/utils.py << 'EOF'
+cat > src/data_analysis_functions.py << 'EOF'
 \"\"\"
 Utility functions for the project.
 TODO: Add helper functions here.
