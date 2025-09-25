@@ -1,9 +1,9 @@
 name,age,grade,subject
-1,Alice,20,Computer Science
-2,Bob,21,Mathematics
-3,Charlie,22,Physics
-4,Diana,23,Economics
-5,Ethan,24,Biology
-6,Fiona,21,Chemistry
-7,George,22,Engineering
-8,Hannah,20,Philosophy
+Alice,20,10,Computer Science
+Bob,21,11,Mathematics
+Charlie,22,12,Physics
+Diana,23,15,Economics
+Ethan,24,20,Biology
+Fiona,21,8,Chemistry
+George,22,9,Engineering
+Hannah,20,15,Philosophy

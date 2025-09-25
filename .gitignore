@@ -1,3 +1,4 @@
+# this tells Git to ignore these files and directories
 __pycache__/
 *.pyc
 .env
