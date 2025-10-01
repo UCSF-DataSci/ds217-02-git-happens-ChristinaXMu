@@ -1,0 +1,1 @@
+Student Grade Analysis\n==============================\n\nIndividual Grades:\nAlice: 10\nBob: 11\nCharlie: 12\nDiana: 15\nEthan: 20\nFiona: 8\nGeorge: 9\nHannah: 15\n\nSummary:\nAverage grade: 12.5\nHighest grade: 20\nTotal students: 8\n
