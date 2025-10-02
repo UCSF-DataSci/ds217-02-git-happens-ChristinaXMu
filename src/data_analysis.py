@@ -7,7 +7,7 @@ This demonstrates __main__ execution control and modular design
 import csv
 from pathlib import Path
 
-def load_student_data(csv_file):
+def load_students(csv_file):
     """Load student data from CSV file."""
     students = []
     try:
@@ -67,7 +67,7 @@ def main():
     print("=" * 40)
 
     # Load data from CSV
-    students = load_student_data('data/students.csv')
+    students = load_students('data/students.csv')
 
     if not students:
         print("No student data to analyze")
