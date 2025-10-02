@@ -3,14 +3,41 @@
 Advanced Student Analysis - Module Usage
 This demonstrates importing functions from other scripts
 """
+import csv
 
 # Import functions from the modular script
 from data_analysis import (
-    load_student_data,
     calculate_average,
     find_highest_grade,
     save_results_to_file
 )
+
+def load_data(filename):
+    """Generic loader that checks file extension.   """
+    if filename.endswith('.csv'):
+        return load_csv(filename)
+    else:
+        print("Unsupported file format. Please provide a .csv file.")
+
+def load_csv(csv_file):
+    """Load student data from CSV file."""
+    students = []
+    try:
+        with open(csv_file, 'r') as file:
+            reader = csv.DictReader(file)
+            for row in reader:
+                students.append({
+                    'name': row['name'],
+                    'age': int(row['age']),
+                    'grade': int(row['grade']),
+                    'subject': row['subject']
+                })
+    except FileNotFoundError:
+        print(f"Error: File {csv_file} not found")
+    except Exception as e:
+        print(f"Error loading data: {e}")
+
+    return students
 
 def analyze_grade_distribution(grades):
     """Analyze the distribution of grades."""
@@ -119,7 +146,7 @@ def main():
     print("=" * 45)
 
     # Load data using imported function
-    students = load_student_data('data/students.csv')
+    students = load_csv('data/students.csv')
 
     if not students:
         print("No data loaded. Please check data/students.csv")
