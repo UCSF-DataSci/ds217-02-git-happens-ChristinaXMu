@@ -1,1 +1,23 @@
-Student Grade Analysis\n==============================\n\nIndividual Grades:\nAlice: 99\nEliot: 100\nChristina: 75\nDiana: 65\nEthan: 40\nFiona: 80\nGeorge: 71\nHanna: 90\n\nSummary:\nAverage grade: 77.5\nHighest grade: 100\nTotal students: 8\n
+Analysis Report
+
+Total number of students: 8
+Average grade: 77.5
+Highest grade: 100
+Lowest grade: 40
+
+Students per subject:
+  Computer Science: 1
+  Mathematics: 1
+  Physics: 1
+  Economics: 1
+  Biology: 1
+  Chemistry: 1
+  Engineering: 1
+  Philosophy: 1
+
+Grade distribution:
+  A: 3 (37.5%)
+  B: 1 (12.5%)
+  C: 2 (25.0%)
+  D: 1 (12.5%)
+  F: 1 (12.5%)
