@@ -1,1 +1,1 @@
-Student Grade Analysis\n==============================\n\nIndividual Grades:\nEliot: 99\nChristina: 100\nCharlie: 75\nDiana: 65\nEthan: 40\nFiona: 80\nGeorge: 71\nHanna: 90\n\nSummary:\nAverage grade: 77.5\nHighest grade: 100\nTotal students: 8\n
+Student Grade Analysis\n==============================\n\nIndividual Grades:\nAlice: 99\nEliot: 100\nChristina: 75\nDiana: 65\nEthan: 40\nFiona: 80\nGeorge: 71\nHanna: 90\n\nSummary:\nAverage grade: 77.5\nHighest grade: 100\nTotal students: 8\n

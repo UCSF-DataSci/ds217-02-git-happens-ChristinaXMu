@@ -27,7 +27,7 @@ def load_students(csv_file):
 
     return students
 
-def calculate_average(grades):
+def calculate_average_grade(grades):
     """Calculate the average of a list of grades."""
     if not grades:
         return 0
@@ -75,7 +75,7 @@ def main():
 
     # Calculate statistics
     grades = [student['grade'] for student in students]
-    average = calculate_average(grades)
+    average = calculate_average_grade(grades)
     highest = find_highest_grade(grades)
 
     # Display results

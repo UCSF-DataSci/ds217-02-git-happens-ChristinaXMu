@@ -7,7 +7,7 @@ import csv
 
 # Import functions from the modular script
 from data_analysis import (
-    calculate_average,
+    calculate_average_grade,
     find_highest_grade,
     save_results_to_file
 )
@@ -38,6 +38,21 @@ def load_csv(csv_file):
         print(f"Error loading data: {e}")
 
     return students
+
+def analyze_data(students):
+    grades = [s['grade'] for s in students]
+    stats = {
+        "total_students": len(students),
+        "average_grade": sum(grades)/len(grades),
+        "highest_grade": max(grades),
+        "lowest_grade": min(grades),
+        "subjects": {},
+        "grade_distribution": {}
+    }
+    for s in students:
+        stats['subjects'][s['subject']] = stats['subjects'].get(s['subject'], 0) + 1
+    stats['grade_distribution'] = analyze_grade_distribution(grades)
+    return stats
 
 def analyze_grade_distribution(grades):
     """Analyze the distribution of grades."""
@@ -83,7 +98,7 @@ def generate_detailed_report(students, filename):
 
     # Get grades and basic statistics
     grades = [student['grade'] for student in students]
-    average = calculate_average(grades)
+    average = calculate_average_grade(grades)
     highest = find_highest_grade(grades)
     lowest = min(grades) if grades else 0
 
@@ -156,7 +171,7 @@ def main():
 
     # Use imported functions
     grades = [student['grade'] for student in students]
-    average = calculate_average(grades)
+    average = calculate_average_grade(grades)
     highest = find_highest_grade(grades)
 
     print(f"Average grade: {average:.1f}")
